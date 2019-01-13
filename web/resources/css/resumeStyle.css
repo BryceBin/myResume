@@ -1,0 +1,103 @@
+body{
+    font-family: 'Microsoft Yahei', sans-serif;
+    font-size: 16px;
+}
+
+.top{
+    background: #1a48ac8c;
+    height: 30px;
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+}
+.photo{
+    padding-left: 30%;
+}
+
+.content{
+    background-color: #C2C2C2;
+    float: left;
+    margin: 30px;
+    width: 70%;
+    top: 0px;
+    bottom: 0px;
+    padding-bottom: 300px;
+
+}
+
+#name{
+    padding-left: 40%;
+}
+
+.self{
+    margin: 5px;
+    /* display: none; */
+}
+
+.honor{
+    display: none;
+}
+
+.experience{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+.menu_list {
+    width: 268px;
+    margin: 0;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #1a48ac8c;
+}
+    
+.menu_head {
+    height: 47px;
+    line-height: 47px;
+    padding-left: 38px;
+    font-size: 14px;
+    color: #525252;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    margin: 0px;
+    font-weight: bold;
+    background: #1a48ac8c;
+}
+    
+.menu_list .current {
+    background: #51a9f18c;
+}
+    
+.menu_nva {
+    line-height: 50px;
+    border-top:1px  solid #51a9f18c;
+    border-left: 1px solid #51a9f18c;
+    background: #51a9f18c;
+    border-right: 1px solid #51a9f18c;
+    display: block;
+}
+    
+.menu_nva a {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 38px;
+    color: #777777;
+    background: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #51a9f18c;
+}
+    
+.menu_nva a:hover {
+    text-decoration: none;
+}

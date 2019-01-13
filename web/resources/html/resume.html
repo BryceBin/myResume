@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>个人主页</title>
+<meta charset="utf-8"> 
+<!-- <link rel="stylesheet" type="text/css" href="../css/base.css"> -->
+<link rel="stylesheet" type="text/css" href="/resources/css/base.css">
+<!-- <link rel="stylesheet" type="text/css" href="../css/resumeStyle.css"> -->
+<link rel="stylesheet" type="text/css" href="/resources/css/resumeStyle.css">
+<!-- <script type="text/javascript" charset="UTF-8" src="../js/main.js"></script> -->
+<script type="text/javascript" charset="UTF-8" src="/resources/js/main.js"></script>
+<!-- <script type="text/javascript">
+    window.onload = getUserInfo();
+</script> -->
+</head>
+<body onload="getUserInfo()">
+    <div class="top">top</div>
+    <div id="firstpaneDiv" class="menu_list">
+        <img class="photo" src="/resources/images/male.png" onclick="uploadPhoto()">
+        <div id="name">姓名</div>
+        <div class="menu_nva">
+        <a class="menu" href="#" onclick="changeContent(1)" >简介</a>
+        <a class="menu" href="#" onclick="changeContent(2)">奖项成就</a>
+        <a class="menu" href="#" onclick="changeContent(3)">项目经历</a>
+        <a id="contact" href="#">联系方式:18273128805</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="self">
+            <div class="brief">个人简介</div>
+            <div class="brief_content" style="padding-left:10px;">还没有填写哦~</div>
+        </div>
+        <div class="self">
+            <div class="edu">教育经历</div>
+            <div class="edu_content" style="padding-left:10px;">还没有填写哦~</div>
+        </div>
+        <div class="self">
+            <div class="back">专业背景</div>
+            <div class="back_content" style="padding-left:10px;">还没有填写哦~</div>
+        </div>
+        <div class="self">
+            <div class="hobby">兴趣爱好</div>
+            <div class="hobby_content" style="padding-left:10px;">还没有填写哦~</div>
+        </div>
+        <div class="honor hidden">
+                <div >奖项成就</div>
+            <div id="honor" style="padding-left:10px;">奖项成就</div>
+        </div>
+        <div class="experience hidden">
+            <div >项目经历</div>
+            <div id="xmjl" style="padding-left:10px;">项目经历</div>
+        </div>
+    </div>
+    <!-- <img src="../images/modify.png" onclick="modifyInfo()" width="60px" height="60px" style="float:right"> -->
+    
+    <img src="/resources/images/modify.png" onclick="modifyInfo()" width="60px" height="60px" style="float:right">
+</body>
+
+</html>
+ 

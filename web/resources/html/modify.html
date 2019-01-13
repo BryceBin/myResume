@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserInfo</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/modify.css">
+    <!-- <script type="text/javascript" charset="utf-8" src="../js/modify.js"></script> -->
+    <script type="text/javascript" charset="utf-8" src="/resources/js/modify.js"></script>
+    <!-- <script>
+        window.onload = initInfo();
+    </script> -->
+</head>
+<body onload="initInfo()">
+        <div class="Content-Main">
+            <form  action="/modify" method="post" class="form-userInfo" onsubmit="return confirm('确认保存？')" enctype="multipart/form-data">
+                <h1>个人信息</h1>
+                <label>
+                    <span>姓名:</span>
+                    <input id="name" type="text"  name="uname" placeholder="全名">
+                </label>
+                <label>
+                    <span>手机号码:</span>
+                    <input id="contact" type="text" name="contact" placeholder="Please input 11 number">
+                </label>
+                <label>
+                    <span>个人简介</span>
+                    <textarea id="jianjie" id="message" name="jianjie" placeholder="introdution"></textarea>
+                </label>
+                <label>
+                    <span>教育经历</span>
+                    <textarea id="edujl" id="edujl" name="edujl" placeholder="education experience"></textarea>
+                </label>
+                <label>
+                    <span>专业背景</span>
+                    <textarea id="majorbg" name="majorbg" placeholder="major background"></textarea>
+                </label>
+                <label>
+                    <span>兴趣爱好</span>
+                    <textarea id="hobby" name="hobby" placeholder="your hobby"></textarea>
+                </label>
+                <label>
+                    <span>奖项成就</span>
+                    <textarea id="honor" name="honor" placeholder="the honor you got"></textarea>
+                </label>
+                <label>
+                    <span>项目经历</span>
+                    <textarea id="xmjl" name="xmjl" placeholder="pratice experience"></textarea>
+                </label>
+                <label>
+                    <span>上传照片</span>
+                    <input type="file" id="upload" value="上传照片" name="photo">
+                </label>
+                
+                <label>
+                    <input type="submit" class="button" name="save">
+                </label>
+                <label>
+                    <div class="button" onclick="backToResume()">返回</div>
+                </label>
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>注册</title>
+        <!-- <link rel="stylesheet" type="text/css" href="../css/base.css"> -->
+        <link rel="stylesheet" type="text/css" href="/resources/css/base.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/register.css"> -->
+        <link rel="stylesheet" type="text/css" href="/resources/css/register.css">
+        <!-- <script type="text/javascript" charset="utf-8" src="../js/register.js"></script> -->
+        <script type="text/javascript" charset="utf-8" src="/resources/js/register.js"></script>
+	</head>
+	<body>
+		<div class="container">
+            <h1>注册</h1>
+            <form method="POST" action="/register" onsubmit="return checkPwd()">
+                <div >
+                    <input type="text" name="username" placeholder="用户名" onblur="ckNameUseable(this.value)" onfocus="document.getElementById('tip').style.display='none';">
+                    <div id="tip">已被占用！</div>
+                </div>
+                <input id="pwd1" type="password" name="pwd1th" placeholder="密码">
+                <input id="pwd2" type="password" name="pwd2th" placeholder="确认密码">
+                <button type="submit" class="button">确认</button>
+            </form>
+		</div>
+	</body>
+</html>

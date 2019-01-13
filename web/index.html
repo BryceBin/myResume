@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="./resources/css/base.css">
+		<link rel="stylesheet" type="text/css" href="./resources/css/login.css">
+		<link rel="stylesheet" type="text/css" href="/resources/css/base.css">
+		<link rel="stylesheet" type="text/css" href="/resources/css/login.css">
+		<script type="text/javascript" charset="utf-8" src="/resources/js/main.js"></script>
+		<script type="text/javascript" charset="utf-8" src="./resources/js/main.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="/resources/js/md5.js"></script>
+	</head>
+
+	<body onload="changeCaptcha(false)">
+		<div class="container">
+			<div class="container-login">
+				<div class="login-top">
+					<span class="top_tag l_float active" onclick="pwdLogin()">密码登录</span>
+					<span class="top_tag r_float" onclick="phoneLogin()">手机登录</span>
+				</div>
+				<div class="wrap-login show">
+					<form class="login-form validate-form" method="POST" action="/login">
+
+						<div class="wrap-input validate-input">
+							<span class="label-input">用户名</span>
+							<input class="input" type="text" name="username" placeholder="请输入用户名" autocomplete="off">
+							<span class="focus-input" data-symbol=""></span>
+						</div>
+
+						<div class="wrap-input validate-input">
+							<span class="label-input">密码</span>
+							<input class="input" type="password" name="password" placeholder="请输入密码">
+							<span class="focus-input" data-symbol=""></span>
+						</div>
+
+						<div class="wrap-input validate-input" >
+							<span class="label-input" style="display: block">验证码</span>
+							<input class="input" id="captcha-input" type="text" name="captcha" placeholder="请输入验证码" autocomplete="off">
+							<div class="captcha" id="captcha" onclick="changeCaptcha(true)">1234</div>
+							<span class="focus-input" data-symbol="" ></span>
+						</div>
+
+						<input type="hidden" name="flag" value="account"/>
+
+						<div class="container-login-form-btn" >
+							<div class="wrap-login-form-btn">
+								<div class="login-form-bgbtn"></div>
+								<button class="login-form-btn" type="submit">登 录</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="wrap-login hidden">
+					<form class="login-form validate-form" method="POST" action="/login">
+
+						<div class="wrap-input validate-input">
+							<span class="label-input">手机号码</span>
+							<input id="phoneNumber" class="input" type="text" name="phoneNumber" placeholder="请输入手机号" autocomplete="off">
+							<span class="focus-input" data-symbol=""></span>
+						</div>
+
+						<div class="wrap-input validate-input" >
+							<span class="label-input" style="display: block">验证码</span>
+							<input class="input" id="phone-input" type="text" name="captcha" placeholder="请输入验证码" autocomplete="off">
+							<div class="captcha" id="phone" onclick="sendSMS()">获取验证码</div>
+							<span class="focus-input" data-symbol="" ></span>
+						</div>
+
+						<input type="hidden" name="flag" value="phone"/>
+
+						<div class="container-login-form-btn" >
+							<div class="wrap-login-form-btn">
+								<div class="login-form-bgbtn"></div>
+								<button class="login-form-btn" type="submit">登 录</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="register">没有账号？<a href="/resources/html/register.html">注册</a></div>
+			</div>
+		</div>
+	</body>
+</html>
